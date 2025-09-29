@@ -62,7 +62,6 @@ namespace ListaGenerica
         {
             txtMosDatos.Text = ""; 
 
-            // Obtener los datos como una lista
             List<string> datos = lista.Mostrar();
             for (int i = 0; i < datos.Count; i++) 
             {
