@@ -58,19 +58,17 @@ namespace ListaGenerica
         {
             MostrarLista();
         }
-
-        // Método sencillo para mostrar en el TextBox
         private void MostrarLista()
         {
-            txtMosDatos.Text = ""; // limpiar
+            txtMosDatos.Text = ""; 
 
             // Obtener los datos como una lista
             List<string> datos = lista.Mostrar();
-            for (int i = 0; i < datos.Count; i++) // Cambiar Length por Count
+            for (int i = 0; i < datos.Count; i++) 
             {
-                if (datos[i] != null) // que no esté vacío
+                if (datos[i] != null) 
                 {
-                    txtMosDatos.Text = txtMosDatos.Text + "[" + i + "] " + datos[i] + "\n"; // en lugar de Environment.NewLine
+                    txtMosDatos.Text = txtMosDatos.Text + "[" + i + "] " + datos[i] + "\n"; 
                 }
             }
         }
